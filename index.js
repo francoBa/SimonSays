@@ -67,8 +67,10 @@ function startOver() {
 }
 
 $('#start').on('click', function() {
-    nextSequence();
     $('#start').hide(100);
+    setTimeout(() => {
+        nextSequence();
+    }, 200);
 })
 
 $(document).keydown(function() {
