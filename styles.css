@@ -5,6 +5,19 @@ body {
     background-color: #011f3f;
 }
 
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+    color: #ffffff;
+    background-color: #00ff00;
+    border: 10px solid #000000;
+    font-style: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 #level-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 3rem;
@@ -53,4 +66,25 @@ body {
 .pressed {
     box-shadow: 0 0 20px #ffffff;
     background-color: #cccccc;
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .btn {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 761px) {
+    #start {
+        display: none;
+        visibility: hidden;
+    }
 }

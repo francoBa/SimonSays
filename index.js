@@ -63,7 +63,13 @@ function startOver() {
     gamePattern = [];
     userClickedPattern = [];
     level = 0;
+    $('#start').show();
 }
+
+$('#start').on('click', function() {
+    nextSequence();
+    $('#start').hide(100);
+})
 
 $(document).keydown(function() {
     if ($('h1').text() === 'Press A Key to Start' || $('h1').text() === 'Game Over, Press Any Key to Restart') {
